@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Activity } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+
+const LOGO_URL =
+  "https://customer-assets.emergentagent.com/job_medixcel-hospitals/artifacts/2ojdc1fp_NanoCura%20Logo.png";
 
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
@@ -41,14 +44,15 @@ export default function Header() {
           <a
             href="#top"
             data-testid="header-logo"
-            className="flex items-center gap-2.5 group"
+            className="flex items-center group shrink-0"
           >
-            <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#0284C7] to-[#38BDF8] text-white shadow-md">
-              <Activity className="h-4 w-4" strokeWidth={2.4} />
-              <span className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full bg-emerald-400 nc-pulse" />
-            </span>
-            <span className="font-display text-[17px] font-semibold tracking-tight text-[#0C1828]">
-              MediXcel <span className="font-light text-[#0284C7]">NanoCura</span>
+            <span className="block overflow-hidden h-9 sm:h-11 w-[170px] sm:w-[200px] relative">
+              <img
+                src={LOGO_URL}
+                alt="MediXcel NanoCura"
+                draggable={false}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none h-[230px] sm:h-[280px] object-contain select-none"
+              />
             </span>
           </a>
 
