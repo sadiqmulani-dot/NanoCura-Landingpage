@@ -1,0 +1,137 @@
+{
+  "theme": "light",
+  "archetype": "4_swiss_high_contrast",
+  "brand_identity": {
+    "name": "MediXcel NanoCura",
+    "domain": "Healthcare SaaS (HIMS)",
+    "vibe": "Futuristic, Premium, Precise, Trustworthy"
+  },
+  "colors": {
+    "background": "#F8FAFC",
+    "foreground": "#0F172A",
+    "primary": "#0284C7",
+    "primary_hover": "#0369A1",
+    "secondary": "#E0F2FE",
+    "secondary_foreground": "#0C4A6E",
+    "accent": "#38BDF8",
+    "muted": "#F1F5F9",
+    "muted_foreground": "#64748B",
+    "border": "#E2E8F0",
+    "glass_bg": "rgba(255, 255, 255, 0.7)",
+    "glass_border": "rgba(255, 255, 255, 0.4)"
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Manrope",
+    "mono_font": "JetBrains Mono",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-light tracking-tighter",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight",
+      "h3": "text-2xl sm:text-3xl font-medium tracking-tight",
+      "h4": "text-xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-primary"
+    }
+  },
+  "surface_strategies": {
+    "hero_glass": "backdrop-blur-2xl bg-white/70 border border-white/40 shadow-[0_8px_32px_rgba(2,132,199,0.08)]",
+    "bento_card": "bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300",
+    "grid_border_technical": "border-collapse border-r border-b border-slate-200"
+  },
+  "spacing_and_layout": {
+    "generous_padding": "py-24 sm:py-32 px-6 sm:px-12 lg:px-24",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 sm:gap-8",
+    "control_room_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"
+  },
+  "image_urls": [
+    {
+      "category": "hero_dashboard",
+      "url": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxkYXNoYm9hcmR8ZW58MHx8fHwxNzc3NjE3OTkzfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Futuristic UI dashboard representation"
+    },
+    {
+      "category": "features_opd",
+      "url": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxkb2N0b3J8ZW58MHx8fHwxNzc3NjE4MDExfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Doctor looking at patient/tablet"
+    },
+    {
+      "category": "features_ipd",
+      "url": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxob3NwaXRhbHxlbnwwfHx8fDE3Nzc2MTgwMTF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Hospital bed/IPD ward"
+    },
+    {
+      "category": "hospital_exterior",
+      "url": "https://images.unsplash.com/photo-1615555253536-427c99e967d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGJ1aWxkaW5nJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3Nzc2MTc5ODN8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern hospital building exterior"
+    },
+    {
+      "category": "testimonial_avatar_1",
+      "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg",
+      "description": "Male doctor avatar"
+    }
+  ],
+  "components_required": [
+    "Button",
+    "Input",
+    "Select",
+    "Form",
+    "Accordion",
+    "Card",
+    "Tabs",
+    "Popover",
+    "Calendar",
+    "Dialog"
+  ],
+  "sections_architecture": [
+    {
+      "name": "Header",
+      "design": "Sticky, Crystal Glassmorphism surface, clear brand logo, Links (Features, Modules, Pricing), primary CTA (Request Demo)."
+    },
+    {
+      "name": "Hero",
+      "design": "Immersive. Pale blue gradient blob in bg. Massive typography (Outfit, Light). Subheadline in Manrope. CTA group: Request Demo (Primary Button), Sign Up (Secondary), Login (Ghost). Floating dashboard mockup image with high-end glassmorphism borders."
+    },
+    {
+      "name": "Marquee_Integrations",
+      "design": "Living Texture strategy. Very slow drift. Monospace font. Items: ABHA, PMJAY, HFR, NHA Compliant. High contrast but small size. Generous gaps (gap-24)."
+    },
+    {
+      "name": "Features_Bento",
+      "design": "Tetris Grid. 8 items (OPD, IPD, Billing, EMR, Lab, Pharmacy, Analytics, Govt Integrations). Mix shapes: The Hero card (spans 2x2) for EMR, smaller squares for Pharmacy/Billing. Use subtle pastel blue/gray backgrounds on cards. Hover states lift and reveal a primary blue border."
+    },
+    {
+      "name": "Modules_Technical_Grid",
+      "design": "Expose the skeleton. Grid Borders look. A strictly organized 3x3 or 4x2 grid of modules (Reception, Billing, Pharmacy, Radiology, etc.). Clean icons (lucide-react), pure white background, crisp 1px borders."
+    },
+    {
+      "name": "Pricing",
+      "design": "4-Tier pricing (Basic, Standard, Premium, Enterprise). 'Premium' tier gets The 'Tracing Beam' treatment or a subtle blue glow and 'Enterprise' is dark/obsidian colored to contrast against the light theme. Bold typography."
+    },
+    {
+      "name": "Demo_Request_Form",
+      "design": "Split layout. Left: Trust elements (Hospital exterior image, text). Right: Form using customized Shadcn inputs. Form fields: Hospital Name, Contact, Mobile, Email, Beds, State, Date (Calendar). Fields must use modern, flat, crisp styling."
+    },
+    {
+      "name": "Testimonials",
+      "design": "Overlapping cards or a smooth carousel. Use avatars, high-contrast quotes."
+    },
+    {
+      "name": "Security_Compliance",
+      "design": "Minimalist icon-driven grid. Highlight HIPAA, ISO, ABHA compliance. Use 'Medical Blue' highlights."
+    },
+    {
+      "name": "FAQ",
+      "design": "Shadcn Accordion. Minimal borders, bold question text."
+    },
+    {
+      "name": "Footer",
+      "design": "Massive padding (py-32). Dark theme inversion (Navy/Obsidian background) to anchor the page. Huge 'Let's Talk' text."
+    }
+  ],
+  "animation_rules": {
+    "general": "Smooth, purposeful. Use framer-motion for scroll reveals.",
+    "hover": "Scale 1.02 on bento cards, button text color transition.",
+    "parallax": "Use on Hero background and large images to create depth."
+  },
+  "testing_attributes": "All buttons, inputs, and interactive elements must have data-testid."
+}
