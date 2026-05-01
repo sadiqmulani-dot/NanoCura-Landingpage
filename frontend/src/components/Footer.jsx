@@ -85,11 +85,30 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-5 max-w-sm text-sm text-slate-400 leading-relaxed">
-              A flagship product by{" "}
-              <span className="text-white font-medium">Plus91 Technologies</span> —
-              building the digital backbone of healthcare across India and beyond
-              since 2010.
+              MediXcel NanoCura is a flagship product by{" "}
+              <span className="text-white font-medium">Plus91 Technologies Pvt. Ltd.</span> —
+              building the digital backbone of healthcare across India and
+              beyond since 2010.
             </p>
+
+            {/* Plus91 logo block */}
+            <div className="mt-7 inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur px-4 py-3" data-testid="footer-plus91">
+              <img
+                src="https://customer-assets.emergentagent.com/job_medixcel-hospitals/artifacts/y452o2s4_plus91-logo-High-res1-1-1024x491%20%282%29.png"
+                alt="Plus91 Technologies"
+                draggable={false}
+                className="h-12 w-auto object-contain select-none"
+              />
+              <span className="h-9 w-px bg-white/15" />
+              <div className="leading-tight">
+                <div className="text-[10px] font-mono-tech uppercase tracking-[0.2em] text-sky-300">
+                  Powered by
+                </div>
+                <div className="text-sm font-medium text-white">
+                  Plus91 Technologies Pvt. Ltd.
+                </div>
+              </div>
+            </div>
 
             <form onSubmit={subscribe} className="mt-8 max-w-sm" data-testid="newsletter-form">
               <label className="text-xs font-mono-tech uppercase tracking-[0.22em] text-sky-300">

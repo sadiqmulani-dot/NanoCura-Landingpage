@@ -96,9 +96,9 @@ export default function Features() {
             <span className="block font-medium">in one calm system.</span>
           </h2>
           <p className="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl">
-            NanoCura unifies front-desk, clinical, financial and compliance
-            workflows so your team spends less time on screens and more time
-            on care.
+            MediXcel NanoCura unifies front-desk, clinical, financial and
+            compliance workflows so your team spends less time on screens and
+            more time on care.
           </p>
         </div>
 

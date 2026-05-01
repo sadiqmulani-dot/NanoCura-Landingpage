@@ -104,13 +104,13 @@ export default function DemoForm() {
               // 04 · Request a demo
             </div>
             <h2 className="font-display mt-4 text-4xl sm:text-5xl font-light tracking-tighter text-[#0C1828]">
-              See NanoCura
+              See MediXcel NanoCura
               <br />
               <span className="font-medium">running in your hospital.</span>
             </h2>
             <p className="mt-5 text-base text-slate-600 max-w-md">
-              A 30-minute personalised walkthrough with a Plus91 specialist —
-              tailored to your bed-size, specialty and patient flow.
+              A 30-minute personalised walkthrough with a Plus91 Technologies
+              specialist — tailored to your bed-size, specialty and patient flow.
             </p>
 
             <div className="mt-8 rounded-3xl overflow-hidden border border-slate-200 shadow-xl shadow-sky-900/5">

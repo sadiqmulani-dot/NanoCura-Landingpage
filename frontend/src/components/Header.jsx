@@ -44,7 +44,7 @@ export default function Header() {
           <a
             href="#top"
             data-testid="header-logo"
-            className="flex items-center group shrink-0"
+            className="flex items-center gap-3 group shrink-0"
           >
             <span className="block overflow-hidden h-10 sm:h-12 w-[150px] sm:w-[185px] relative">
               <img
@@ -53,6 +53,17 @@ export default function Header() {
                 draggable={false}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none h-[185px] sm:h-[225px] object-contain select-none"
               />
+            </span>
+            <span className="hidden xl:inline-flex h-9 items-center rounded-full bg-[#0A1F3D] border border-slate-800 pl-2 pr-3 py-1 gap-2">
+              <img
+                src="https://customer-assets.emergentagent.com/job_medixcel-hospitals/artifacts/y452o2s4_plus91-logo-High-res1-1-1024x491%20%282%29.png"
+                alt="Plus91 Technologies"
+                draggable={false}
+                className="h-7 w-auto object-contain select-none"
+              />
+              <span className="text-[10px] font-mono-tech uppercase tracking-[0.18em] text-slate-200">
+                A Plus91 Product
+              </span>
             </span>
           </a>
 

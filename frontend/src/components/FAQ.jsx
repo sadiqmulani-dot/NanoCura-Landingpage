@@ -7,15 +7,15 @@ import {
 
 const FAQS = [
   {
-    q: "How long does it take to implement NanoCura?",
-    a: "For most small to mid-sized hospitals, NanoCura can be deployed on the same day with rapid setup and configuration, followed by structured staff training for smooth adoption. Multi-branch hospitals or larger healthcare groups can typically go live within a few days through a phased implementation approach, ensuring minimal operational disruption.",
+    q: "How long does it take to implement MediXcel NanoCura?",
+    a: "For most small to mid-sized hospitals, MediXcel NanoCura can be deployed on the same day with rapid setup and configuration, followed by structured staff training for smooth adoption. Multi-branch hospitals or larger healthcare groups can typically go live within a few days through a phased implementation approach, ensuring minimal operational disruption.",
   },
   {
-    q: "Is NanoCura ABHA / PMJAY / HFR ready?",
-    a: "Yes. NanoCura is natively integrated with India's health stack — ABHA registration & linking, HFR provider records, and PMJAY claim submission are built in and continuously updated.",
+    q: "Is MediXcel NanoCura ABHA / PMJAY / HFR ready?",
+    a: "Yes. MediXcel NanoCura is natively integrated with India's health stack — ABHA registration & linking, HFR provider records, and PMJAY claim submission are built in and continuously updated.",
   },
   {
-    q: "Can we run NanoCura on-premise?",
+    q: "Can we run MediXcel NanoCura on-premise?",
     a: "Absolutely. Premium and Enterprise plans support on-premise, private cloud, or hybrid deployments. We also offer fully-managed cloud hosting on MeitY-empanelled data centers in India.",
   },
   {
@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "Will it work with our existing lab and radiology equipment?",
-    a: "NanoCura supports HL7 / ASTM / DICOM and has pre-built integrations with most major instrument vendors. Our team handles the integration as part of onboarding.",
+    a: "MediXcel NanoCura supports HL7 / ASTM / DICOM and has pre-built integrations with most major instrument vendors. Our team handles the integration as part of onboarding.",
   },
   {
     q: "How is patient data secured?",

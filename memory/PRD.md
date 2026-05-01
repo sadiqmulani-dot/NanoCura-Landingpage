@@ -48,3 +48,15 @@ P2
 ## Next Tasks
 - Confirm Stripe + email integration scope with Plus91
 - Build admin lead dashboard
+
+## Update — 2025-12-01 (round 2)
+- Plus91 Technologies branding added prominently in: Header (badge with logo), Hero (eyebrow + dedicated "Powered by" strip with logo), Pricing (trust strip), Footer (full Plus91 logo card)
+- All "NanoCura" copy replaced with "MediXcel NanoCura"
+- Pricing restructured to annual plans (Excl. GST):
+   - Basic ₹65,000/year
+   - Standard ₹75,000/year
+   - Premium ₹1,25,000/year (Most Popular)
+   - Enterprise — Custom
+- Pricing CTA cluster added below tiers: Request Demo, Contact Sales, Pricing Inquiry
+- New phone updated globally: +91 99676 75550
+- FAQ rewritten for same-day deployment messaging

@@ -1,14 +1,15 @@
-import { Check, Sparkles, Building2 } from "lucide-react";
+import { Check, Sparkles, Building2, ArrowRight, Phone, MessageSquare } from "lucide-react";
 import { Button } from "./ui/button";
-import { useState } from "react";
+
+const PLUS91_LOGO =
+  "https://customer-assets.emergentagent.com/job_medixcel-hospitals/artifacts/y452o2s4_plus91-logo-High-res1-1-1024x491%20%282%29.png";
 
 const TIERS = [
   {
     id: "basic",
     name: "Basic",
     blurb: "For clinics & nursing homes starting their digital journey.",
-    priceMonthly: 4999,
-    priceYearly: 4499,
+    priceYearly: 65000,
     features: [
       "Up to 25 beds",
       "OPD + Billing + Pharmacy",
@@ -16,14 +17,13 @@ const TIERS = [
       "Email support",
       "1 GB document storage",
     ],
-    cta: "Start with Basic",
+    cta: "Request Demo",
   },
   {
     id: "standard",
     name: "Standard",
-    blurb: "Most popular for growing 25-100 bed hospitals.",
-    priceMonthly: 9999,
-    priceYearly: 8999,
+    blurb: "For growing 25-100 bed hospitals scaling operations.",
+    priceYearly: 75000,
     features: [
       "Up to 100 beds",
       "All Basic + IPD + Lab + Radiology",
@@ -31,14 +31,13 @@ const TIERS = [
       "Priority email + chat",
       "20 GB storage · Daily backups",
     ],
-    cta: "Choose Standard",
+    cta: "Request Demo",
   },
   {
     id: "premium",
     name: "Premium",
-    blurb: "For multi-specialty hospitals seeking deep analytics.",
-    priceMonthly: 19999,
-    priceYearly: 17999,
+    blurb: "Most popular — multi-specialty hospitals seeking deep analytics.",
+    priceYearly: 125000,
     features: [
       "Up to 300 beds",
       "All Standard + HR + Inventory",
@@ -47,13 +46,12 @@ const TIERS = [
       "Custom integrations · 100 GB",
     ],
     highlighted: true,
-    cta: "Go Premium",
+    cta: "Request Demo",
   },
   {
     id: "enterprise",
     name: "Enterprise",
-    blurb: "Tailored deployments for groups and chains.",
-    priceMonthly: null,
+    blurb: "Tailored deployments for hospital groups and chains.",
     priceYearly: null,
     features: [
       "Unlimited beds & branches",
@@ -63,13 +61,11 @@ const TIERS = [
       "White-label & API access",
     ],
     dark: true,
-    cta: "Talk to Sales",
+    cta: "Contact Sales",
   },
 ];
 
 export default function Pricing() {
-  const [yearly, setYearly] = useState(true);
-
   return (
     <section
       id="pricing"
@@ -83,49 +79,41 @@ export default function Pricing() {
             // 03 · Pricing
           </div>
           <h2 className="font-display mt-4 text-4xl sm:text-5xl lg:text-6xl font-light tracking-tighter text-[#0C1828]">
-            Transparent plans.
+            Transparent annual plans.
             <br />
-            <span className="font-medium">Built to scale with you.</span>
+            <span className="font-medium">Built to scale with your hospital.</span>
           </h2>
           <p className="mt-5 text-base sm:text-lg text-slate-600">
-            Per-hospital monthly subscription. No setup fees. Cancel anytime.
+            Per-hospital annual subscription for MediXcel NanoCura. No setup
+            fees. Cancel anytime.
           </p>
 
+          {/* Plus91 trust strip */}
           <div
-            data-testid="pricing-billing-toggle"
-            className="mt-8 inline-flex items-center gap-1 rounded-full bg-white border border-slate-200 p-1 shadow-sm"
+            data-testid="pricing-plus91-strip"
+            className="mt-7 inline-flex items-center gap-3 rounded-2xl bg-[#0A1F3D] border border-slate-800 px-4 py-3 shadow-lg shadow-sky-900/10"
           >
-            <button
-              data-testid="billing-monthly"
-              onClick={() => setYearly(false)}
-              className={`px-5 py-2 text-sm rounded-full font-medium transition-all ${
-                !yearly
-                  ? "bg-[#0284C7] text-white shadow"
-                  : "text-slate-600 hover:text-[#0284C7]"
-              }`}
-            >
-              Monthly
-            </button>
-            <button
-              data-testid="billing-yearly"
-              onClick={() => setYearly(true)}
-              className={`px-5 py-2 text-sm rounded-full font-medium transition-all flex items-center gap-2 ${
-                yearly
-                  ? "bg-[#0284C7] text-white shadow"
-                  : "text-slate-600 hover:text-[#0284C7]"
-              }`}
-            >
-              Yearly
-              <span className="text-[10px] font-mono-tech px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700">
-                SAVE 10%
-              </span>
-            </button>
+            <img
+              src={PLUS91_LOGO}
+              alt="Plus91 Technologies"
+              draggable={false}
+              className="h-9 w-auto object-contain select-none"
+            />
+            <span className="h-6 w-px bg-slate-700" />
+            <div className="leading-tight text-left">
+              <div className="text-[9px] font-mono-tech uppercase tracking-[0.2em] text-sky-300">
+                Powered by
+              </div>
+              <div className="text-xs font-medium text-white">
+                Plus91 Technologies Pvt. Ltd.
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {TIERS.map((t) => {
-            const price = yearly ? t.priceYearly : t.priceMonthly;
+            const price = t.priceYearly;
             const isDark = t.dark;
             const isHL = t.highlighted;
             return (
@@ -169,38 +157,51 @@ export default function Pricing() {
 
                 <div className="mt-6">
                   {price ? (
-                    <div className="flex items-baseline gap-1">
-                      <span
-                        className={`font-display text-5xl font-light tracking-tight ${
+                    <>
+                      <div className="flex items-baseline gap-1">
+                        <span
+                          data-testid={`price-${t.id}`}
+                          className={`font-display text-4xl sm:text-5xl font-light tracking-tight ${
+                            isDark ? "text-white" : "text-[#0C1828]"
+                          }`}
+                        >
+                          ₹{price.toLocaleString("en-IN")}
+                        </span>
+                        <span
+                          className={`text-sm ${
+                            isDark ? "text-slate-400" : "text-slate-500"
+                          }`}
+                        >
+                          /year
+                        </span>
+                      </div>
+                      <div
+                        className={`mt-1 text-[11px] font-mono-tech uppercase tracking-[0.22em] ${
+                          isDark ? "text-slate-400" : "text-slate-400"
+                        }`}
+                      >
+                        Billed annually · Excl. GST
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div
+                        data-testid={`price-${t.id}`}
+                        className={`font-display text-4xl font-light tracking-tight ${
                           isDark ? "text-white" : "text-[#0C1828]"
                         }`}
                       >
-                        ₹{price.toLocaleString("en-IN")}
-                      </span>
-                      <span
-                        className={`text-sm ${
-                          isDark ? "text-slate-400" : "text-slate-500"
+                        Custom
+                      </div>
+                      <div
+                        className={`mt-1 text-[11px] font-mono-tech uppercase tracking-[0.22em] ${
+                          isDark ? "text-slate-400" : "text-slate-400"
                         }`}
                       >
-                        /mo
-                      </span>
-                    </div>
-                  ) : (
-                    <div
-                      className={`font-display text-4xl font-light tracking-tight ${
-                        isDark ? "text-white" : "text-[#0C1828]"
-                      }`}
-                    >
-                      Custom
-                    </div>
+                        Tailored proposal · Excl. GST
+                      </div>
+                    </>
                   )}
-                  <div
-                    className={`mt-1 text-[11px] font-mono-tech uppercase tracking-[0.22em] ${
-                      isDark ? "text-slate-400" : "text-slate-400"
-                    }`}
-                  >
-                    {price ? (yearly ? "Billed annually" : "Billed monthly") : "Custom proposal"}
-                  </div>
                 </div>
 
                 <ul className="mt-6 space-y-3 flex-1">
@@ -225,7 +226,7 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <a href={t.id === "enterprise" ? "#demo" : "#demo"} className="mt-7 block">
+                <a href="#demo" className="mt-7 block">
                   <Button
                     data-testid={`pricing-cta-${t.id}`}
                     className={`w-full rounded-full h-11 ${
@@ -242,6 +243,53 @@ export default function Pricing() {
               </div>
             );
           })}
+        </div>
+
+        {/* CTA cluster */}
+        <div className="mt-12 rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+            <div>
+              <div className="text-[11px] font-mono-tech uppercase tracking-[0.22em] text-[#0284C7]">
+                Not sure which plan fits?
+              </div>
+              <h3 className="font-display mt-1.5 text-2xl sm:text-3xl font-medium tracking-tight text-[#0C1828]">
+                Talk to a Plus91 specialist.
+              </h3>
+              <p className="mt-1.5 text-sm text-slate-600">
+                We'll help you size MediXcel NanoCura for your hospital — beds,
+                specialties, branches & integrations.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2.5">
+              <a href="#demo" data-testid="pricing-cta-request-demo">
+                <Button className="rounded-full bg-[#0284C7] hover:bg-[#0369A1] text-white h-11 px-5">
+                  <ArrowRight className="mr-2 h-4 w-4" /> Request Demo
+                </Button>
+              </a>
+              <a
+                href="mailto:nanocura@plus91.in?subject=NanoCura%20Sales%20Enquiry"
+                data-testid="pricing-cta-contact-sales"
+              >
+                <Button
+                  variant="outline"
+                  className="rounded-full h-11 px-5 border-slate-300 hover:border-sky-300 hover:bg-sky-50"
+                >
+                  <Phone className="mr-2 h-4 w-4 text-[#0284C7]" /> Contact Sales
+                </Button>
+              </a>
+              <a
+                href="mailto:nanocura@plus91.in?subject=NanoCura%20Pricing%20Inquiry"
+                data-testid="pricing-cta-pricing-inquiry"
+              >
+                <Button
+                  variant="outline"
+                  className="rounded-full h-11 px-5 border-slate-300 hover:border-sky-300 hover:bg-sky-50"
+                >
+                  <MessageSquare className="mr-2 h-4 w-4 text-[#0284C7]" /> Pricing Inquiry
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

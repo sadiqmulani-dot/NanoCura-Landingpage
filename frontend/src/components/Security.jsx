@@ -30,9 +30,9 @@ export default function Security() {
           </div>
           <div className="lg:col-span-5">
             <p className="text-base text-slate-600 leading-relaxed">
-              NanoCura is engineered with hospital-grade security at its core —
-              certifications, encryption, audit trails and India-first data
-              residency, so your clinical & financial data stay protected.
+              MediXcel NanoCura is engineered with hospital-grade security at its
+              core — certifications, encryption, audit trails and India-first
+              data residency, so your clinical & financial data stay protected.
             </p>
           </div>
         </div>

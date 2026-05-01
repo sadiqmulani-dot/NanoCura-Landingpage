@@ -23,7 +23,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/70 backdrop-blur px-3.5 py-1.5 text-xs font-mono-tech tracking-[0.18em] uppercase text-sky-700"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 nc-pulse" />
-              Plus91 · HIMS · Trusted by 500+ Hospitals
+              A Plus91 Technologies Product · Trusted by 500+ Hospitals
             </div>
 
             <h1
@@ -36,7 +36,7 @@ export default function Hero() {
               <br />
               with{" "}
               <span className="bg-gradient-to-r from-[#0284C7] via-[#38BDF8] to-[#0EA5E9] bg-clip-text text-transparent font-medium">
-                NanoCura
+                MediXcel NanoCura
               </span>
             </h1>
 
@@ -93,6 +93,25 @@ export default function Hero() {
                   <div className="text-xs text-slate-500 mt-1">{s.v}</div>
                 </div>
               ))}
+            </div>
+
+            {/* Plus91 powered-by strip */}
+            <div className="mt-10 inline-flex items-center gap-3 rounded-2xl bg-[#0A1F3D] border border-slate-800 px-4 py-3 shadow-lg shadow-sky-900/10" data-testid="hero-plus91-strip">
+              <img
+                src="https://customer-assets.emergentagent.com/job_medixcel-hospitals/artifacts/y452o2s4_plus91-logo-High-res1-1-1024x491%20%282%29.png"
+                alt="Plus91 Technologies"
+                draggable={false}
+                className="h-10 w-auto object-contain select-none"
+              />
+              <span className="h-7 w-px bg-slate-700" />
+              <div className="leading-tight">
+                <div className="text-[10px] font-mono-tech uppercase tracking-[0.2em] text-sky-300">
+                  Powered by
+                </div>
+                <div className="text-sm font-medium text-white">
+                  Plus91 Technologies Pvt. Ltd.
+                </div>
+              </div>
             </div>
           </div>
 

@@ -3,7 +3,7 @@ import { Quote, Star } from "lucide-react";
 const TESTIMONIALS = [
   {
     quote:
-      "NanoCura cut our patient registration time by 60%. Front-desk queues that used to spill into the corridor are simply gone.",
+      "MediXcel NanoCura cut our patient registration time by 60%. Front-desk queues that used to spill into the corridor are simply gone.",
     name: "Dr. Anand Kulkarni",
     role: "Medical Director, Sai Sanjivani",
     location: "Pune, MH",
@@ -19,7 +19,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "We rolled NanoCura across 4 branches in 3 weeks. Doctors picked up the EMR in a single training session. Genuinely impressed.",
+      "We rolled MediXcel NanoCura across 4 branches in 3 weeks. Doctors picked up the EMR in a single training session. Genuinely impressed.",
     name: "Dr. Rohit Mehta",
     role: "CEO, Mehta Multispeciality",
     location: "Ahmedabad, GJ",
@@ -47,7 +47,7 @@ export default function Testimonials() {
           <h2 className="font-display mt-4 text-4xl sm:text-5xl lg:text-6xl font-light tracking-tighter">
             Stories from hospitals
             <br />
-            <span className="font-medium text-sky-200">running on NanoCura.</span>
+            <span className="font-medium text-sky-200">running on MediXcel NanoCura.</span>
           </h2>
         </div>
 
