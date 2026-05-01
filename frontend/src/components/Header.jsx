@@ -46,12 +46,12 @@ export default function Header() {
             data-testid="header-logo"
             className="flex items-center group shrink-0"
           >
-            <span className="block overflow-hidden h-9 sm:h-11 w-[170px] sm:w-[200px] relative">
+            <span className="block overflow-hidden h-10 sm:h-12 w-[150px] sm:w-[185px] relative">
               <img
                 src={LOGO_URL}
                 alt="MediXcel NanoCura"
                 draggable={false}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none h-[230px] sm:h-[280px] object-contain select-none"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none h-[185px] sm:h-[225px] object-contain select-none"
               />
             </span>
           </a>
