@@ -8,7 +8,7 @@ import {
 const FAQS = [
   {
     q: "How long does it take to implement NanoCura?",
-    a: "For most small to mid-sized hospitals, full deployment takes 2–4 weeks including data migration, configuration and staff training. Multi-branch chains usually go live in 6–8 weeks with a phased rollout.",
+    a: "For most small to mid-sized hospitals, NanoCura can be deployed on the same day with rapid setup and configuration, followed by structured staff training for smooth adoption. Multi-branch hospitals or larger healthcare groups can typically go live within a few days through a phased implementation approach, ensuring minimal operational disruption.",
   },
   {
     q: "Is NanoCura ABHA / PMJAY / HFR ready?",

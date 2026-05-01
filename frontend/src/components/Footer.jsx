@@ -151,7 +151,7 @@ export default function Footer() {
                 Pune, Maharashtra, India
               </li>
               <li><a href="mailto:nanocura@plus91.in" className="hover:text-white transition-colors">nanocura@plus91.in</a></li>
-              <li><a href="tel:+919028211000" className="hover:text-white transition-colors">+91 90282 11000</a></li>
+              <li><a href="tel:+919967675550" className="hover:text-white transition-colors">+91 99676 75550</a></li>
             </ul>
             <div className="mt-6 flex items-center gap-2.5">
               {[

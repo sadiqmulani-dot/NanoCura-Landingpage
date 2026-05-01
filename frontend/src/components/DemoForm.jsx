@@ -135,7 +135,7 @@ export default function DemoForm() {
                   </span>
                   <div>
                     <div className="text-sm font-medium text-[#0C1828]">Talk to a specialist</div>
-                    <div className="text-xs text-slate-500">+91 90282 11000 · Mon–Sat 9am–7pm IST</div>
+                    <div className="text-xs text-slate-500">+91 99676 75550 · Mon–Sat 9am–7pm IST</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
